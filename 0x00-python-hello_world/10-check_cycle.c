@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * check_cycle - checks if a singly linked list has a cycle in it
- * @list: pointer to struct
+ * @list: pointer to list
  * Return: return 1, otherwise zero
  */
 int check_cycle(listint_t *list)
@@ -14,10 +14,10 @@ int check_cycle(listint_t *list)
 		return (0);
 	}
 
-	while (current != NULL && current->next != NULL)
+	while (prev != NULL && prev->next != NULL)
 	{
 		current = current->next;
-		prev = prev->next;
+		prev = prev->next->next;
 		if (current == prev)
 			return (1);
 	}
