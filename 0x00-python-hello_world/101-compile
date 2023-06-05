@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+import os
+import marshal
+
+py_file = os.environ.get('PYFILE')
+pyc_file = py_file + 'c'
+
+with open(py_file, 'rb') as f:
+    code = compile(f.read(), py_file, 'exec')
+
+with open(pyc_file, 'wb') as f:
+    marshal.dump(code, f)
+
+
