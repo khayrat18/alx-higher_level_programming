@@ -1,15 +1,9 @@
-#!/usr/bin/python3
+#!/bin/bash
 
-import os
-import marshal
+FILE=$PYFILE
+OUTPUT=$PYFILEc
 
-py_file = os.environ.get('PYFILE')
-pyc_file = py_file + 'c'
+python3 -m py_compile $FILE
 
-with open(py_file, 'rb') as f:
-    code = compile(f.read(), py_file, 'exec')
-
-with open(pyc_file, 'wb') as f:
-    marshal.dump(code, f)
-
+mv $FILE.pyc $OUTPUT
 
