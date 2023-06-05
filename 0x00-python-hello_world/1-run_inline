@@ -1,2 +1,8 @@
-#!/usr/bin/python3
-print(f"Best School: {88+10}")
+#!/bin/bash
+
+if [ -z "$PYCODE" ]; then
+    echo "Error: PYCODE environment is not set"
+    exit 1
+fi
+
+python3 -c "$PYCODE"
