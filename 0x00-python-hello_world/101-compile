@@ -1,9 +1,4 @@
 #!/bin/bash
+python3 -m compileall -b $PYFILEi
 
-FILE=$PYFILE
-OUTPUT=$PYFILEc
-
-python3 -m py_compile $FILE
-
-mv $FILE.pyc $OUTPUT
 
