@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 
-for x in range(ord('z'), ord('A')-1, -1):
-    if x % 2 == 0:
-        print("{}".format(chr(x)), end="")
-    else:
-        print("{}".format(chr(x).upper()), end="")
-
-
+x = 0
+for alph in range(ord('z'), ord('a')-1, -1):
+    print("{}".format(chr(alph - x)), end="")
+    x = 32 if x == 0 else 0
