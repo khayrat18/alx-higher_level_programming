@@ -3,25 +3,31 @@
  * insert_node - function that inserts number in a list
  * @head: pointer to head node
  * @number: number to be inserted
- * Return: return new node, otherwise 0
+ * Return: return new node, otherwise NULL
  */
 
 listint_t *insert_node(listint_t **head, int number)
 {
+	listint_t *node = *head, *new;
 
-	listint_t *new_node;
-
-	new_node = malloc(sizeof(listint_t));
-	if (new_node == NULL)
-	{
+	new = malloc(sizeof(listint_t));
+	if (new == NULL)
 		return (NULL);
+	new->n = number;
+
+	if (node == NULL || node->n >= number)
+	{
+		new->next = node;
+		*head = new;
+		return (new);
 	}
 
-	new_node->n = number;
+	while (node && node->next && node->next->n < number)
+		node = node->next;
 
-	new_node->next = (*head);
+	new->next = node->next;
+	node->next = new;
 
-	(*head) = new_node;
-
-	return (new_node);
+	return (new);
 }
+
