@@ -1,9 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
-import add_0
+from add_0 import add
 
 a = 1
 b = 2
 
-print("{} + {} = {}".format(a, b, a + b), end="")
-print()
+print("{} + {} = {}".format(a, b, add(a, b), end="\n"))
