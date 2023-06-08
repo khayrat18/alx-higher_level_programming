@@ -5,8 +5,8 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
 
 # declare variables
-a = int(10)
-b = int(5)
+a = 10
+b = 5
 
 # printing result of the function
 
