@@ -6,11 +6,11 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-    size_t count;
+       size_t count;
 
     while (h != NULL)
     {
-        printf("%u ", h->n);
+        printf("%u\n", h->n);
         count++;
         h = h->next;
     }
