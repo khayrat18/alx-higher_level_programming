@@ -1,5 +1,7 @@
-# #!/usr/bin/python3
+#!/usr/bin/python3
 
 def raise_exception():
 
-        raise Exception("An exception was raised")
+    x = "block"
+    y = 85
+    z = x + y

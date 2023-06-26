@@ -1,4 +1,4 @@
-# #!/usr/bin/python3
+#!/usr/bin/python3
 
 def list_division(my_list_1, my_list_2, list_length):
     result = []
@@ -11,8 +11,8 @@ def list_division(my_list_1, my_list_2, list_length):
             print("division by 0")
             quotient = 0
         except TypeError:
-         print("wrong type")
-         quotient = 0
+            print("wrong type")
+            quotient = 0
         except IndexError:
             print("out of range")
             quotient = 0
