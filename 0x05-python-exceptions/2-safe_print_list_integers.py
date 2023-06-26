@@ -2,13 +2,12 @@
 
 def safe_print_list_integers(my_list=[], x=0):
     count = 0
-    try:
-        for idx in my_list[:x]:
-            if isinstance(idx, int):
-                print("{:d}".format(idx), end="")
+    for idx in range(x):
+        try:
+            if isinstance(my_list[idx], int):
+                print("{:d}".format(my_list[idx]), end="")
                 count += 1
-        print()
-    except TypeError:
-        pass
-    finally:
-        return (count)
+        except (TypeError, IndexError):
+            pass
+    print()
+    return (count)
