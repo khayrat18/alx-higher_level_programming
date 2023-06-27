@@ -1,11 +1,15 @@
-# #!/usr/bin/python3
+#!/usr/bin/python3
 
-""" A class that defines a square"""
-
-class Square:
-
-    """Initialize a method with no argument"""
+class square:
+    """ A class that defines an empty square object"""
 
     def __init__(self) -> None:
         pass
-        
+
+    def __init__(self) -> None: 
+        pass
+    """Initializes a square object
+    Args: None
+    Returns: None
+    Raises: None
+    """
