@@ -1,8 +1,15 @@
 # #!/usr/bin/python3
 
-""" A class that defines a square"""
-
 class Square:
-    def __init__(self) -> None:
+    """ A class that defines an empty square object
+    Attributes: None
+    """
+    
+    def __init__(self) -> None: 
         pass
+    """Initializes a square object
+    Args: None
+    Returns: None
+    Raises: None
+    """
         
