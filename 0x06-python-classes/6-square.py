@@ -11,7 +11,6 @@ class Square:
             size (int),
             position (int,int)
         """
-        self.__size = 0
         self.size = size
         self.position = position
 

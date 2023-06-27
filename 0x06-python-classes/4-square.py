@@ -9,7 +9,6 @@ class Square:
         Args:
             size (int)
         """
-        self.__size = 0
         self.size = size
 
     @property
