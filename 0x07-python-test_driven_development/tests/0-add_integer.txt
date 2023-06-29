@@ -3,6 +3,7 @@
 """
 Usage example:
 
+<<<<<<< HEAD
 >>> add_integer(1, 2)
 3
 
@@ -17,6 +18,20 @@ Usage example:
 
 >>> add_integer(4, "School")
 b must be an add_integer
+=======
+>>> (add_integer(1, 2))
+3
+>>> (add_integer(100, -2))
+98
+>>> (add_integer(2))
+100
+>>> (add_integer(100.3, -2))
+100
+>>> add_integer(4, "School")
+b must be an add_integer
+>>> add_integer(None)
+a must be an add_integer
+>>>>>>> f2846996c2fe6d59b248703e39d82ab6f6674ae3
 
 >>> add_integer(None)
 
