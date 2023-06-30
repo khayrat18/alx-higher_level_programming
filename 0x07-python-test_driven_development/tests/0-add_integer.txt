@@ -1,9 +1,10 @@
-#!/usr/bin/python3
+# #!/usr/bin/python3
 
 """
 Usage example:
 
-<<<<<<< HEAD
+>>> add_integer = __import__('0-add_integer').add_integer
+
 >>> add_integer(1, 2)
 3
 
@@ -14,27 +15,21 @@ Usage example:
 100
 
 >>> add_integer(100.3, -2)
-100
-
->>> add_integer(4, "School")
-b must be an add_integer
-=======
->>> (add_integer(1, 2))
-3
->>> (add_integer(100, -2))
 98
->>> (add_integer(2))
-100
->>> (add_integer(100.3, -2))
-100
+
+>>> add_integer("Best", "Student")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
 >>> add_integer(4, "School")
-b must be an add_integer
->>> add_integer(None)
-a must be an add_integer
->>>>>>> f2846996c2fe6d59b248703e39d82ab6f6674ae3
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
 
 >>> add_integer(None)
-
-a must be an add_integer
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
 
 """
