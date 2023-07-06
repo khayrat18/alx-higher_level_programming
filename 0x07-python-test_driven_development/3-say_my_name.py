@@ -1,6 +1,13 @@
 #!/usr/bin/python3
+"""Defines a function that prints first_name and last_name"""
 
 def say_my_name(first_name, last_name=""):
+    """Return sum
+    Args:
+        str(first_name,last_name)
+    Raises:
+        TypeError: if neither first_name or last_name is a string
+        """
 
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")

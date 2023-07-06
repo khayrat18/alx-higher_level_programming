@@ -1,0 +1,24 @@
+
+
+"""
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""")
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Quonam modo?
+Non autem hoc:
+igitur ne illud quidem.
+Fortasse id optimum, sed ubi illud:
+Plus semper voluptatis?
+Teneo, inquit, finem illi videri nihil dolere.
+Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens.
+Si id dicis, vicimus.
+Inde sermone vario sex illa a Dipylo stadia confecimus.
+Sin aliud quid voles, postea.
+Quae animi affectio suum cuique tribuens atque hanc, quam dico.
+Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres
+"""
