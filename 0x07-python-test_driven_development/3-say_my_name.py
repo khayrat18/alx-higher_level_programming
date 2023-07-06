@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a function that prints first_name and last_name"""
 
+
 def say_my_name(first_name, last_name=""):
     """Return sum
     Args:
