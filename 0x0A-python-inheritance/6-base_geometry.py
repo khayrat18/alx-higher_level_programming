@@ -1,6 +1,7 @@
 # #!/usr/bin/python3
-
+"""Defines a class"""
 class BaseGeometry:
-        def area(self):
+    """Creates a class """
+    def area(self):
             raise Exception("area() is not implementated")
 

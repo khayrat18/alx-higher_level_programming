@@ -6,8 +6,7 @@ Module for MyInt class that inherits from int
 """
 
 class MyInt(int):
-    """
-    MyInt class that inherits from int
+    """MyInt class that inherits from int
     """
     def __eq__(self, other):
         return super().__ne__(other)
