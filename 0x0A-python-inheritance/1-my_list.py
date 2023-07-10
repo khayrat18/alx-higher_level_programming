@@ -1,3 +1,7 @@
-#!/usr/bin/python3
+# #!/usr/bin/python3
 
-def print_sorted(self):
+class MyList(list):
+
+    def print_sorted(self):
+        sorted_list = sorted(self)
+        print (sorted_list)
