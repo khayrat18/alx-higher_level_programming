@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""A fuction that writes an objec to a text file"""
+
 import json
 
 

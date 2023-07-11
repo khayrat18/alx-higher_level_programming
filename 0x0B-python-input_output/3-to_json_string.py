@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Function that returns JSON representtion of a string"""
+
 
 import json
 
