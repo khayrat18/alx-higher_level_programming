@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+# #!/usr/bin/python3
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 
 filename = "my_list.json"
