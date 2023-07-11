@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Writes a string to a text file and return number of charactes"""
 
 
 def write_file(filename="", text=""):
