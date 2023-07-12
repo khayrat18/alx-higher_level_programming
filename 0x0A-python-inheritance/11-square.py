@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Class that inherits from a rectangle"""
 
 Rectangle = __import__('9-rectangle').Rectangle
 
