@@ -14,9 +14,7 @@ try:
     items = load_from_json_file("add_item.json")
 except FileNotFoundError:
     items = []
-if items is not None:
+
     items.extend(sys.argv[1:])
-else:
-    items = sys.argv[1:]
 
 save_to_json_file(items, "add_item.json")
