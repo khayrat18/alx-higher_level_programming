@@ -18,8 +18,7 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-    
-    
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """Returns json string representationof a dictionary"""
@@ -28,22 +27,20 @@ class Base:
             return "[]"
         else:
             return json.dumps(list_dictionaries)
-        
-    
+
     @classmethod
     def save_to_file(cls, list_objs):
         """Writes a json string represntation
         of list_onj to a file
         """
-        fp = cls.__name__+ ".json"
-        with open(fp,"w") as jsonfile:
+        fp = cls.__name__ + ".json"
+        with open(fp, "w") as jsonfile:
             if list_objs is None or list_objs == []:
-                jsonfile.write ("[]")
+                jsonfile.write("[]")
             else:
                 list_dict = [o.to_dictionary() for o in list_objs]
             jsonfile.write(Base.to_json_string(list_dict))
-    
-    
+
     @staticmethod
     def from_json_string(json_string):
         """Returns json string representtaion of a string
@@ -52,8 +49,7 @@ class Base:
             return "[]"
         else:
             return json.dumps(json_string)
-        
-    
+
     @classmethod
     def create(cls, **dictionary):
         """Return a class instantied from a dictionary of attributes.
@@ -68,8 +64,7 @@ class Base:
                 new = cls(1)
             new.update(**dictionary)
             return new
-    
-    
+
     @classmethod
     def load_from_file(cls):
         """Return a list of classes instantiated from a file of JSON strings.
@@ -82,7 +77,6 @@ class Base:
         except IOError:
             return []
 
-    
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """Write the CSV serialization of a list of objects to a file.
@@ -100,7 +94,6 @@ class Base:
                 for obj in list_objs:
                     writer.writerow(obj.to_dictionary())
 
-    
     @classmethod
     def load_from_file_csv(cls):
         """Return a list of classes instantiated from a CSV file.
@@ -118,7 +111,6 @@ class Base:
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
             return []
-
 
     @staticmethod
     def draw(list_rectangles, list_squares):

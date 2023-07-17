@@ -3,6 +3,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """Rectangle class that inherits from Base
     args:
@@ -11,20 +12,19 @@ class Rectangle(Base):
         x(int)
         y(int)
     """
-    
+
     def __init__(self, width, height, x=0, y=0, id=None):
         self.width = width
         self.height = height
         self.x = x
         self.y = y
         super().__init__(id)
-    
+
     @property
     def width(self):
         """Retrieves an attribute"""
         return self.__width
-    
-    
+
     @width.setter
     def width(self, value):
         """Sets an attribute"""
@@ -38,7 +38,7 @@ class Rectangle(Base):
     def height(self):
         """Retrieves an attribute"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """Sets an attribute"""
@@ -52,25 +52,26 @@ class Rectangle(Base):
     def x(self):
         """Retrieves an attribute"""
         return self.__x
-    
+
     @x.setter
-    def x(self,value):
+    def x(self, value):
         """Sets an attribute"""
         if not isinstance(value, int):
-            raise TypeError ("x must be an integer")
+            raise TypeError("x must be an integer")
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
+
     @property
     def y(self):
         """Retrieves an attribute"""
         return self.__y
 
     @y.setter
-    def y(self,value):
+    def y(self, value):
         """Sets an attribute"""
         if not isinstance(value, int):
-            raise TypeError ("y must be an integer")
+            raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
@@ -78,7 +79,7 @@ class Rectangle(Base):
     def area(self):
         """Returns area of a rectangle"""
         return self.width * self.height
-    
+
     def display(self):
         """Print the Rectangle using the `#` character."""
         if self.width == 0 or self.height == 0:
@@ -129,15 +130,14 @@ class Rectangle(Base):
     def to_dictionary(self):
         """Returns dictionary representaion og attributes"""
         get_dict = {
-            "id": self.id,
-            "width": self.width,
-            "height": self.height,
-            "x": self.x,
-            "y": self.x
-        }
+                "id": self.id,
+                "width": self.width,
+                "height": self.height,
+                "x": self.x,
+                "y": self.x
+                }
         return get_dict
-    
+
     def __str__(self):
         """Returns string representation of attributes"""
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
-    
